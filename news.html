@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+  <link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    table, th, td {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 1px solid rgb(255, 255, 255);
+      
+    }
+    </style>
+</head>
+
+<body>
+  <!-- ------------------------------------sidebar------------------------------------- -->
+  <div class="layout has-sidebar fixed-sidebar fixed-header">
+    <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+      <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+      <div class="sidebar-layout">
+        <div class="sidebar-header">
+          <div class="pro-sidebar-logo">
+              <div>P</div>
+            <h5>Pitipat <div class="text">admin</div>
+            </h5>
+          </div>
+        </div>
+        <div class="sidebar-content">
+          <nav class="menu open-current-submenu">
+            <ul>
+              <li class="menu-header"><span> overview </span></li>
+              <li class="menu-item sub-menu">
+                <a href="news.html">
+                  <span class="menu-icon">
+                    <i class="ri-folder-warning-line"></i>
+                  </span>
+                  <span class="menu-title">News</span>
+                </a>
+                <div class="sub-menu-list">
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="technique.html">
+                  <span class="menu-icon">
+                    <i class="ri-bar-chart-2-fill"></i>
+                  </span>
+                  <span class="menu-title">Technique</span>
+                  <span class="menu-suffix">
+                    <i class="ri-add-circle-line"></i>
+                  </span>
+                </a>
+                <div class="sub-menu-list">
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="forecast.html">
+                  <span class="menu-icon">
+                    <i class="ri-lightbulb-flash-line"></i>
+                  </span>
+                  <span class="menu-title">Forecast</span>
+                </a>
+                <div class="sub-menu-list">
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="calculation.html">
+                  <span class="menu-icon">
+                    <i class="ri-calculator-line"></i>
+                  </span>
+                  <span class="menu-title">Calculate</span>
+                </a>
+                <div class="sub-menu-list">
+                </div>
+              </li>
+              <li class="menu-header"><span> authentication </span></li>
+              <li class="menu-item sub-menu">
+                <a href="login.html">
+                  <span class="menu-icon">
+                    <i class="ri-login-box-line"></i>
+                  </span>
+                  <span class="menu-title">Login</span>
+                </a>
+                <div class="sub-menu-list">
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar-footer">
+          <div class="footer-box">
+            <li class="menu-item sub-menu">
+              <a href="login.html">
+                <span class="menu-icon">
+                  <i class="ri-logout-box-line"></i>
+                </span>
+                <span class="menu-title">Logout</span>
+              </a>
+              <div class="sub-menu-list">
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+    <div class="layout">
+      <!-- ------------------------------------sidebar------------------------------------- -->
+      <!-- -------------------------------content------------------------------------------ -->
+      <main class="content">
+        <div>
+          <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+            <i class="ri-menu-line ri-xl"></i>
+          </a>
+        </div>
+        <h1>news</h1>
+
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Currency</th>
+            <th>Impact</th>
+            <th>Actual</th>
+            <th>Forecast</th>
+            <th>Previous</th>
+          </tr>
+          <tr>
+            <td>TueMar 5</td>
+            <td>6:30am</td>
+            <td>JPY</td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="rgba(248,115,41,1)"><path d="M22 8V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7H21C21.5523 7 22 7.44772 22 8ZM12.4142 5H2V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"></path></svg>Tokyo Core CPI y/y</td>
+            <td>2.5%</td>
+            <td>2.5%</td>
+            <td>1.8%</td>
+          </tr>
+          <tr>
+            <td>TueMar 5</td>
+            <td>7:00am</td>
+            <td>NZD</td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="rgba(243,215,0,1)"><path d="M22 8V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7H21C21.5523 7 22 7.44772 22 8ZM12.4142 5H2V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"></path></svg>ANZ Commodity Prices m/m</td>
+            <td>3.5%</td>
+            <td>-</td>
+            <td>2.1%</td>
+          </tr>
+          <tr>
+            <td>TueMar 5</td>
+            <td>7:01am</td>
+            <td>GBP</td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="rgba(243,215,0,1)"><path d="M22 8V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7H21C21.5523 7 22 7.44772 22 8ZM12.4142 5H2V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"></path></svg>BRC Retail Sales Monitor y/y</td>
+            <td>1.0%</td>
+            <td>1.6%</td>
+            <td>1.4%</td>
+          </tr>
+          <tr>
+            <td>TueMar 5</td>
+            <td>7:30am</td>
+            <td>AUD</td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="rgba(243,215,0,1)"><path d="M22 8V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7H21C21.5523 7 22 7.44772 22 8ZM12.4142 5H2V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"></path></svg>Current Account</td>
+            <td>11.8B</td>
+            <td>4.9B</td>
+            <td>1.3B</td>
+          </tr>
+          <tr>
+            <td>TueMar 5</td>
+            <td>8:45am</td>
+            <td>CNY</td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="rgba(248,115,41,1)"><path d="M22 8V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7H21C21.5523 7 22 7.44772 22 8ZM12.4142 5H2V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"></path></svg>Caixin Services PMI</td>
+            <td>52.5</td>
+            <td>52.9</td>
+            <td>52.7</td>
+          </tr>
+          <tr>
+            <td>TueMar 5</td>
+            <td>10:35am</td>
+            <td>JPY</td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="rgba(243,215,0,1)"><path d="M22 8V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7H21C21.5523 7 22 7.44772 22 8ZM12.4142 5H2V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"></path></svg>10-y Bond Auction</td>
+            <td>0.72|3.2</td>
+            <td>-</td>
+            <td>0.74|3.6</td>
+          </tr>
+          <tr>
+            <td>TueMar 5</td>
+            <td>11:00am</td>
+            <td>JPY</td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="rgba(236,0,0,1)"><path d="M22 8V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7H21C21.5523 7 22 7.44772 22 8ZM12.4142 5H2V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"></path></svg>BOJ Gov Ueda Speaks</td>
+            <td>10:35am</td>
+            <td>JPY</td>
+            <td>JPY</td>
+          </tr>
+          <tr>
+            <td>TueMar 5</td>
+            <td>2:45pm</td>
+            <td>EUR</td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="rgba(243,215,0,1)"><path d="M22 8V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7H21C21.5523 7 22 7.44772 22 8ZM12.4142 5H2V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"></path></svg>French Industrial Production m/m</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>TueMar 5</td>
+            <td>3:15pm</td>
+            <td>EUR</td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="rgba(243,215,0,1)"><path d="M22 8V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7H21C21.5523 7 22 7.44772 22 8ZM12.4142 5H2V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"></path></svg>Spanish Services PMI</td>
+            <td>-1.1%</td>
+            <td>-0.1%</td>
+            <td>0.4%</td>
+          </tr>
+          <tr>
+            <td>TueMar 5</td>
+            <td>3:45pm</td>
+            <td>EUR</td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="rgba(243,215,0,1)"><path d="M22 8V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V7H21C21.5523 7 22 7.44772 22 8ZM12.4142 5H2V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5Z"></path></svg>Italian Services PMI</td>
+            <td>54.7</td>
+            <td>53.4</td>
+            <td>52.1</td>
+          </tr>
+        </table>
+
+
+
+      </main>
+    </div>
+  </div>
+  <!-- ---------------------------content---------------------------------------------- -->
+  <!-- partial -->
+  <script src='https://unpkg.com/@popperjs/core@2'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

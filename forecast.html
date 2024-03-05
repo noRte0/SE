@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+  <link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- ------------------------------------sidebar------------------------------------- -->
+  <div class="layout has-sidebar fixed-sidebar fixed-header">
+    <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+      <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+      <div class="sidebar-layout">
+        <div class="sidebar-header">
+          <div class="pro-sidebar-logo">
+            <div>P</div>
+            <h5>Pitipat <div class="text">admin</div>
+            </h5>
+          </div>
+        </div>
+        <div class="sidebar-content">
+          <nav class="menu open-current-submenu">
+            <ul>
+              <li class="menu-header"><span> overview </span></li>
+              <li class="menu-item sub-menu">
+                <a href="news.html">
+                  <span class="menu-icon">
+                    <i class="ri-folder-warning-line"></i>
+                  </span>
+                  <span class="menu-title">News</span>
+                </a>
+                <div class="sub-menu-list">
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="technique.html">
+                  <span class="menu-icon">
+                    <i class="ri-bar-chart-2-fill"></i>
+                  </span>
+                  <span class="menu-title">Technique</span>
+                  <span class="menu-suffix">
+                    <i class="ri-add-circle-line"></i>
+                  </span>
+                </a>
+                <div class="sub-menu-list">
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="forecast.html">
+                  <span class="menu-icon">
+                    <i class="ri-lightbulb-flash-line"></i>
+                  </span>
+                  <span class="menu-title">Forecast</span>
+                </a>
+                <div class="sub-menu-list">
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="calculation.html">
+                  <span class="menu-icon">
+                    <i class="ri-calculator-line"></i>
+                  </span>
+                  <span class="menu-title">Calculate</span>
+                </a>
+                <div class="sub-menu-list">
+                </div>
+              </li>
+              <li class="menu-header"><span> authentication </span></li>
+              <li class="menu-item sub-menu">
+                <a href="login.html">
+                  <span class="menu-icon">
+                    <i class="ri-login-box-line"></i>
+                  </span>
+                  <span class="menu-title">Login</span>
+                </a>
+                <div class="sub-menu-list">
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar-footer">
+          <div class="footer-box">
+            <li class="menu-item sub-menu">
+              <a href="login.html">
+                <span class="menu-icon">
+                  <i class="ri-logout-box-line"></i>
+                </span>
+                <span class="menu-title">Logout</span>
+              </a>
+              <div class="sub-menu-list">
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+    <div class="layout">
+      <!-- ------------------------------------sidebar------------------------------------- -->
+      <!-- -------------------------------content------------------------------------------ -->
+      <main class="content">
+        <div>
+          <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+            <i class="ri-menu-line ri-xl"></i>
+          </a>
+        </div>
+        <h1>forecast</h1>
+
+
+        <label for="model-select">Model</label>
+
+        <select name="model" id="model-select">
+          <option value="">--Please choose an model--</option>
+          <option value="sample1">sample1</option>
+          <option value="sample2">sample2</option>
+          <option value="sample3">sample3</option>
+          <option value="sample4">sample4</option>
+          <option value="sample5">sample5</option>
+          <option value="sample6">sample6</option>
+        </select>
+       
+
+        <label for="product-select">Product</label>
+
+        <select name="product" id="product-select">
+          <option value="">--Please choose an product--</option>
+          <option value="EURUSD">EURUSD</option>
+          <option value="XAUUSD">XAUUSD</option>
+          <option value="USDJPY">USDJPY</option>
+          <option value="USDCAD">USDCAD</option>
+          <option value="AUDUSD">AUDUSD</option>
+          <option value="GBPUSD">GBPUSD</option>
+        </select>
+      
+
+
+        <label for="timeframe-select">Timeframe</label>
+
+        <select name="timeframe" id="timeframe-select">
+          <option value="">--Please choose an timeframe--</option>
+          <option value="5min">5min</option>
+          <option value="10min">10min</option>
+          <option value="15min">15min</option>
+          <option value="30min">30min</option>
+          <option value="1h">1h</option>
+          <option value="4h">4h</option>
+          <option value="1d">1d</option>
+        </select>
+       
+
+        <h1>result  :  Buy</h1>
+
+
+
+      </main>
+    </div>
+  </div>
+  <!-- ---------------------------content---------------------------------------------- -->
+  <!-- partial -->
+  <script src='https://unpkg.com/@popperjs/core@2'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
